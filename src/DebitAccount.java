@@ -16,7 +16,6 @@ public class DebitAccount extends Account{
         }
         return true;
     }
-
     @Override
     public boolean withdraw(double _amount) {
         if(_amount > 0 && _amount <= this.Balance){
@@ -28,7 +27,6 @@ public class DebitAccount extends Account{
         }
         return true;
     }
-
     @Override
     public String toString() {
         return super.toString();

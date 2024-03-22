@@ -1,10 +1,6 @@
 public abstract class Account {
     protected String AccountType;
     protected double Balance;
-    /*Account(String _accountType, double _balance){
-        this.AccountType = _accountType;
-        this.Balance = _balance;
-    }*/
     public abstract boolean withdraw(double amount);
     public abstract boolean deposit (double amount);
 

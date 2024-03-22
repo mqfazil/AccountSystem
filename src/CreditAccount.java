@@ -8,7 +8,6 @@ public class CreditAccount extends Account{
     public void setCreditLimit(double _creditLimit){
         CreditLimit = _creditLimit;
     }
-
     @Override
     public boolean deposit(double _amount) {
         if (this.Balance <= 0){
@@ -25,7 +24,6 @@ public class CreditAccount extends Account{
         }
         return false;
     }
-
     @Override
     public boolean withdraw(double _amount) {
         if ((this.CreditLimit - this.Balance) >= _amount){
@@ -37,7 +35,6 @@ public class CreditAccount extends Account{
         }
         return true;
     }
-
     @Override
     public String toString() {
         String content = "Remaining Fund: " + (this.CreditLimit - this.Balance) + "\r\n";
